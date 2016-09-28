@@ -10,17 +10,19 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            int X = Convert.ToInt32(Console.ReadLine());
-            int Y = Convert.ToInt32(Console.ReadLine());
-            char S = '#';
-            Draw(X, Y, S);
-            Console.ReadKey();
-        }
+            Point p1 = new Point();
+            p1.x = 1;
+            p1.y = 3;
+            p1.s = '#';
+            p1.Draw();
 
-         static void Draw (int x, int y, char s)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(s);
+            Point p2 = new Point();
+            p2.x = 4;
+            p2.y = 5;
+            p2.s = '@';
+            p2.Draw();
+
+            Console.ReadKey();
 
         }
     }
